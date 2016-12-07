@@ -1,0 +1,103 @@
+body {
+  background-image: url("../images/BG_imageOne.JPG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+/* ----- flexbox photo gallery ----- */
+article#photoProofSheet {
+  margin: auto;
+  padding-top: 100px;
+}
+
+.flex-gallery-container {
+  display: -webkit-flex;
+  display: flex;
+  margin: auto; /* center container */
+  width: 880px; /* num_items*(item_width+(item_margin*2)) */
+  background-color: rgba(158,158,158,0.8);
+  justify-content: flex-start;;
+  flex-wrap: wrap;
+  border: goldenrod solid 1px;
+  padding: 10px; /* same as item_margin */
+}
+
+.flex-gallery-item {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 133px;
+  margin: 10px;
+}
+/* ----- modal photo viewer ----- */
+/* style tiggering item */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* modal background */
+.modal-photo-viewer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* modal item (photo) */
+.modal-photo-item {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* close button and nav buttons */
+.next{
+  position: absolute;
+  top: 40%;
+  right: 35px;
+}
+.prev {
+  position: absolute;
+  top: 40%;
+  left: 35px
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+}
+.next,
+.prev,
+.close {
+  color: goldenrod;
+  font-size: 35px;
+  font-weight: bold;
+}
+.next:hover,
+.next:focus,
+.prev:hover,
+.prev:focus,
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* animation to modal open */
+.modal-photo-item {
+  animation: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}

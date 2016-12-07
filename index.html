@@ -1,7 +1,33 @@
+<!DOCTYPE html>
+
 <html>
+
   <head>
+    <link rel="stylesheet" href="css/photo.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans" rel="stylesheet">
   </head>
+
   <body>
-    Hello World!
+    <!-- flexbox photo gallery -->
+    <article id="photoProofSheet">
+      <div id="gallery" class="flex-gallery-container">
+        <!-- <div id="galleryItem" class="flex-gallery-item"><img id="myImg" src="images/BG_imageOne.JPG" alt="Image one" width="200px"></div> -->
+        <div id="galleryItem" class="flex-gallery-item"><img id="img0" src="images/IMG_0011.JPG" onclick="openModal('img0')" alt="Image 1" width="200px"></div>
+        <div id="galleryItem" class="flex-gallery-item"><img id="img1" src="images/IMG_0019.JPG" onclick="openModal('img1')" alt="Image 2" width="200px"></div>
+        <div id="galleryItem" class="flex-gallery-item"><img id="img2" src="images/IMG_0027.JPG" onclick="openModal('img2')" alt="Image 3" width="200px"></div>
+        <div id="galleryItem" class="flex-gallery-item"><img id="img3" src="images/IMG_0035.JPG" onclick="openModal('img3')" alt="Image 4" width="200px"></div>
+        <div id="galleryItem" class="flex-gallery-item"><img id="img4" src="images/IMG_0043.JPG" onclick="openModal('img4')" alt="Image 5" width="200px"></div>
+        <div id="galleryItem" class="flex-gallery-item"><img id="img5" src="images/IMG_0053.JPG" onclick="openModal('img5')" alt="Image 6" width="200px"></div>
+        <div id="galleryItem" class="flex-gallery-item"><img id="img6" src="images/IMG_0088.JPG" onclick="openModal('img6')" alt="Image 7" width="200px"></div>
+      </div>
+      <!-- Image viewer modal -->
+      <div id="myModal" class="modal-photo-viewer">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <span class="prev">&#10094</span>
+        <span class="next">&#10095</span>
+        <img class="modal-photo-item" id="img01">
+      </div>
+      <script type="text/javascript" src="script/photo.js"></script>
+    <article>
   </body>
 </html>
