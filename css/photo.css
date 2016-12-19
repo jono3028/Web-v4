@@ -31,7 +31,7 @@ article#photoProofSheet {
   height: 133px;
   margin: 10px;
 }
-/* ----- modal photo viewer ----- */
+/* ----- modal Lightbox photo viewer ----- */
 /* style tiggering item */
 #myImg {
   border-radius: 5px;
@@ -53,11 +53,14 @@ article#photoProofSheet {
   background-color: rgba(0, 0, 0, 0.5);
 }
 /* modal item (photo) */
-.modal-photo-item {
+.modal-content {
   margin: auto;
-  display: block;
   width: 80%;
   max-width: 700px;
+}
+/* hide all large photos */
+.myslides {
+  display: none;
 }
 /* close button and nav buttons */
 .next{
@@ -72,8 +75,8 @@ article#photoProofSheet {
 }
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 35px;
+  right: 40px;
 }
 .next,
 .prev,
@@ -93,7 +96,7 @@ article#photoProofSheet {
   cursor: pointer;
 }
 /* animation to modal open */
-.modal-photo-item {
+.modal-content {
   animation: zoom;
   animation-duration: 0.6s;
 }

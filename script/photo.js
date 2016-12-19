@@ -1,16 +1,25 @@
-// Select the modal element
-var modal = document.getElementById('myModal');
-
-// Select element within model element to change
-var modalImg = document.getElementById("img01");
-
-// Open the modal
-function openModal(n) {
-  var img = document.getElementById(n);
-  modal.style.display = "block";
-  modalImg.src = img.src;
+// Lightbox
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
 }
-// Close the modal
 function closeModal() {
-  modal.style.display = "none";
+  document.getElementById('myModal').style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName('mySlides');
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
 }
