@@ -104,3 +104,10 @@ article#photoProofSheet {
   from {transform: scale(0)}
   to {transform: scale(1)}
 }
+ /* Page Navigation at bottom of page */
+ .pageNav {
+   color: goldenrod;
+   font-size: 35px;
+   font-weight: bold;
+   text-decoration: none;
+ }
