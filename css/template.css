@@ -1,0 +1,62 @@
+body {
+  background-image: url("../images/BG_imageOne.JPG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: 100% auto;
+  color: goldenrod;
+  font-family:  arial;
+  font-style: normal;;
+  font-size: 1.5em;
+  line-height: 1.0em;
+  padding: 0;
+  text-shadow: 1px 1px 1px #111111;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size:2.0em;
+  line-height: 1.25em;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 7px #111111;
+}
+
+.floater_1 {
+  position: fixed;
+  width: 30%;
+  top: 20%;
+  left: 10%;
+}
+
+.floater_2 {
+  position: fixed;
+  width: 30%;
+  top: 65%;
+  left: 10%;
+
+}
+.wireButton-container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.wireButton {
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: fit-content;
+  color: goldenrod;
+  text-decoration: none;
+}
+
+.wireButton:hover {
+  background-color: lightgray;
+}
+
+.wireButton:visited {
+  color: goldenrod;
+}

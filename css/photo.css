@@ -1,9 +1,19 @@
-body {
+/* body {
   background-image: url("../images/BG_imageOne.JPG");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
   background-size: 100% auto;
+  text-align: center;
+  color: goldenrod;
+  font-family:  arial;
+  font-style: normal;;
+  font-size: 1.5em;
+  line-height: 1.0em;
+  padding: 0;
+  text-shadow: 1px 1px 1px #111111;
+} */
+body {
   text-align: center;
 }
 
@@ -26,9 +36,8 @@ article#photoProofSheet {
 }
 
 .flex-gallery-item {
-  background-color: cornflowerblue;
   width: 200px;
-  height: 133px;
+  /*max-height: 200px;*/
   margin: 10px;
 }
 /* ----- modal Lightbox photo viewer ----- */
@@ -84,6 +93,7 @@ article#photoProofSheet {
   color: goldenrod;
   font-size: 35px;
   font-weight: bold;
+  text-decoration: none;
 }
 .next:hover,
 .next:focus,
@@ -110,4 +120,7 @@ article#photoProofSheet {
    font-size: 35px;
    font-weight: bold;
    text-decoration: none;
+ }
+ .selected {
+   border: goldenrod solid 1px;
  }
