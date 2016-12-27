@@ -3,6 +3,7 @@
 <html>
 
   <head>
+    <link rel="stylesheet" href="css/template.css" type="text/css"/>
     <link rel="stylesheet" href="css/photo.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans" rel="stylesheet">
   </head>
@@ -10,58 +11,61 @@
   <body>
     <!-- flexbox photo gallery -->
     <article id="photoProofSheet">
+      <a class="close" href="index.html">BACK</a>
       <div id="gallery" class="flex-gallery-container">
-        <!-- <div class="flex-gallery-item"><img src="images/IMG_0011.JPG" onclick="openModal();currentSlide(1)" alt="Image 1" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0019.JPG" onclick="openModal();currentSlide(2)" alt="Image 2" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0023.JPG" onclick="openModal();currentSlide(3)" alt="Image 3" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0027.JPG" onclick="openModal();currentSlide(4)" alt="Image 4" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0029.JPG" onclick="openModal();currentSlide(5)" alt="Image 5" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0035.JPG" onclick="openModal();currentSlide(6)" alt="Image 6" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0040.JPG" onclick="openModal();currentSlide(7)" alt="Image 7" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0042.JPG" onclick="openModal();currentSlide(8)" alt="Image 8" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0043.JPG" onclick="openModal();currentSlide(9)" alt="Image 9" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0053.JPG" onclick="openModal();currentSlide(10)" alt="Image 10" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0055.JPG" onclick="openModal();currentSlide(11)" alt="Image 11" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0061.JPG" onclick="openModal();currentSlide(12)" alt="Image 12" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0073.JPG" onclick="openModal();currentSlide(13)" alt="Image 13" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0079.JPG" onclick="openModal();currentSlide(14)" alt="Image 14" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0087.JPG" onclick="openModal();currentSlide(15)" alt="Image 15" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0088.JPG" onclick="openModal();currentSlide(16)" alt="Image 16" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0095.JPG" onclick="openModal();currentSlide(17)" alt="Image 17" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0100.JPG" onclick="openModal();currentSlide(18)" alt="Image 18" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0114.JPG" onclick="openModal();currentSlide(19)" alt="Image 19" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0115.JPG" onclick="openModal();currentSlide(20)" alt="Image 20" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0121.JPG" onclick="openModal();currentSlide(21)" alt="Image 21" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0138.JPG" onclick="openModal();currentSlide(22)" alt="Image 22" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0157.JPG" onclick="openModal();currentSlide(23)" alt="Image 23" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0161.JPG" onclick="openModal();currentSlide(24)" alt="Image 24" width="200px"></div>-->
-        <div class="flex-gallery-item"><img src="images/IMG_0165.JPG" onclick="openModal();currentSlide(25)" alt="Image 25" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0168.JPG" onclick="openModal();currentSlide(26)" alt="Image 26" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0174.JPG" onclick="openModal();currentSlide(27)" alt="Image 27" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0177.JPG" onclick="openModal();currentSlide(28)" alt="Image 28" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0192.JPG" onclick="openModal();currentSlide(29)" alt="Image 29" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0194.JPG" onclick="openModal();currentSlide(30)" alt="Image 30" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0204.JPG" onclick="openModal();currentSlide(31)" alt="Image 31" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0222.JPG" onclick="openModal();currentSlide(32)" alt="Image 32" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0243.JPG" onclick="openModal();currentSlide(33)" alt="Image 33" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0244.JPG" onclick="openModal();currentSlide(34)" alt="Image 34" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0256.JPG" onclick="openModal();currentSlide(35)" alt="Image 35" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0261.JPG" onclick="openModal();currentSlide(36)" alt="Image 36" width="200px"></div>
-        <!-- <div class="flex-gallery-item"><img src="images/IMG_0289.JPG" onclick="openModal();currentSlide(37)" alt="Image 37" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0307.JPG" onclick="openModal();currentSlide(38)" alt="Image 38" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0343.JPG" onclick="openModal();currentSlide(39)" alt="Image 39" width="200px"></div>
-        <div class="flex-gallery-item"><img src="images/IMG_0366.JPG" onclick="openModal();currentSlide(40)" alt="Image 40" width="200px"></div> -->
+        <!-- <div class="flex-gallery-item"><img src="images/booth/IMG_0011.JPG" onclick="openModal();currentSlide(1)" alt="Image 1" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0019.JPG" onclick="openModal();currentSlide(2)" alt="Image 2" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0023.JPG" onclick="openModal();currentSlide(3)" alt="Image 3" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0027.JPG" onclick="openModal();currentSlide(4)" alt="Image 4" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0029.JPG" onclick="openModal();currentSlide(5)" alt="Image 5" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0035.JPG" onclick="openModal();currentSlide(6)" alt="Image 6" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0040.JPG" onclick="openModal();currentSlide(7)" alt="Image 7" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0042.JPG" onclick="openModal();currentSlide(8)" alt="Image 8" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0043.JPG" onclick="openModal();currentSlide(9)" alt="Image 9" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0053.JPG" onclick="openModal();currentSlide(10)" alt="Image 10" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0055.JPG" onclick="openModal();currentSlide(11)" alt="Image 11" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0061.JPG" onclick="openModal();currentSlide(12)" alt="Image 12" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0073.JPG" onclick="openModal();currentSlide(13)" alt="Image 13" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0079.JPG" onclick="openModal();currentSlide(14)" alt="Image 14" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0087.JPG" onclick="openModal();currentSlide(15)" alt="Image 15" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0088.JPG" onclick="openModal();currentSlide(16)" alt="Image 16" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0095.JPG" onclick="openModal();currentSlide(17)" alt="Image 17" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0100.JPG" onclick="openModal();currentSlide(18)" alt="Image 18" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0114.JPG" onclick="openModal();currentSlide(19)" alt="Image 19" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0115.JPG" onclick="openModal();currentSlide(20)" alt="Image 20" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0121.JPG" onclick="openModal();currentSlide(21)" alt="Image 21" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0138.JPG" onclick="openModal();currentSlide(22)" alt="Image 22" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0157.JPG" onclick="openModal();currentSlide(23)" alt="Image 23" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0161.JPG" onclick="openModal();currentSlide(24)" alt="Image 24" width="200px"></div>-->
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0165.JPG" onclick="openModal();currentSlide(25)" alt="Image 25" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0168.JPG" onclick="openModal();currentSlide(26)" alt="Image 26" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0174.JPG" onclick="openModal();currentSlide(27)" alt="Image 27" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0177.JPG" onclick="openModal();currentSlide(28)" alt="Image 28" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0192.JPG" onclick="openModal();currentSlide(29)" alt="Image 29" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0194.JPG" onclick="openModal();currentSlide(30)" alt="Image 30" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0204.JPG" onclick="openModal();currentSlide(31)" alt="Image 31" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0222.JPG" onclick="openModal();currentSlide(32)" alt="Image 32" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0243.JPG" onclick="openModal();currentSlide(33)" alt="Image 33" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0244.JPG" onclick="openModal();currentSlide(34)" alt="Image 34" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0256.JPG" onclick="openModal();currentSlide(35)" alt="Image 35" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0261.JPG" onclick="openModal();currentSlide(36)" alt="Image 36" width="200px"></div>
+        <!-- <div class="flex-gallery-item"><img src="images/booth/IMG_0289.JPG" onclick="openModal();currentSlide(37)" alt="Image 37" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0307.JPG" onclick="openModal();currentSlide(38)" alt="Image 38" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0343.JPG" onclick="openModal();currentSlide(39)" alt="Image 39" width="200px"></div>
+        <div class="flex-gallery-item"><img src="images/booth/IMG_0366.JPG" onclick="openModal();currentSlide(40)" alt="Image 40" width="200px"></div> -->
       </div>
       <!-- Page Navigation -->
       <div>
-        <a class="pageNav" href="booth1.html"> 1 </a>
-        <a class="pageNav" href="booth2.html"> 2 </a>
-        <a class="pageNav" href="booth4.html"> 4 </a>
+        <br>
+        <a class="pageNav" href="booth1.html">1</a>
+        <a class="pageNav" href="booth2.html">2</a>
+        <a class="pageNav selected" href="booth3.html">3</a>
+        <a class="pageNav" href="booth4.html">4</a>
       </div>
 
       <!-- Lightbox -->
       <div id="myModal" class="modal-photo-viewer">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" onclick="closeModal()">BACK</span>
         <div class="modal-content">
           <div class="mySlides"><img src="images/IMG_0011.JPG"></div>
           <div class="mySlides"><img src="images/IMG_0019.JPG"></div>
