@@ -2,12 +2,19 @@
 melgetsjon v4
 3 MAR 2017
 */
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  /*outline: 1px dashed red;*/
+}
+/* Styling starts here */
 body {
-  background-image: url("../images/BG_imageOne.JPG");
+  background-image: url("../img/BG_imageOne.JPG");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
-  background-size: 100% auto;
+  background-size: cover;
   color: goldenrod;
   font-family:  arial;
   font-style: normal;;
@@ -16,7 +23,6 @@ body {
   padding: 0;
   text-shadow: 1px 1px 1px #111111;
 }
-
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size:2.0em;
@@ -25,51 +31,107 @@ h1 {
   margin: 0;
   text-shadow: 1px 1px 7px #111111;
 }
-
-.floater_1 {
-  position: fixed;
-  width: 30%;
-  top: 20%;
-  left: 10%;
+/* Home page specific */
+#home {
+  width: 450px;
+  margin: 150px 100px;
 }
-
-.floater_2 {
-  position: fixed;
-  /*width: 30%;*/
-  top: 65%;
-  left: 10%;
-
+#buttons {
+  margin-top: 250px;
 }
-.wireButton-container {
-  display: -webkit-box;   /* iOS 6-, Safari 3.1-6 */
-  display: -moz-box;      /* Firefox 19 */
-  display: -ms-flexbox;   /* IE 10 */
-  display: -webkit-flex;  /* Chrome */
-  display: flex;          /* Opera 12.1, Firefox 20+ */
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
 .wireButton {
+  margin: 10px 0px;
+  width: 250px;
   border: 2px solid goldenrod;
   border-radius: 10px;
-  margin-bottom: 10px;
+  display: block;
   padding: 10px;
-  width: fit-content;
+  text-align: center;
   color: goldenrod;
   text-decoration: none;
 }
-
 .wireButton:hover {
   background-color: lightgray;
+  cursor: pointer;
 }
-
 .wireButton:visited {
   color: goldenrod;
+}
+/* Gallery specific */
+#gallery, #modal {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+#gallery {
+  margin-top: 175px;
+  display: none;
+}
+#modal {
+  background: rgba(0,0,0,0.8);
+  display: none;
+}
+.gallery {
+  display: -webkit-flex;
+  display: flex;
+  margin: auto; /* center container */
+  width: 880px; /* num_items*(item_width+(item_margin*2)) */
+  min-width: 880px;
+  background-color: rgba(158,158,158,0.8);
+  justify-content: flex-start;;
+  flex-wrap: wrap;
+  border: goldenrod solid 1px;
+  padding: 10px; /* same as item_margin */
+}
+.galleryPhoto {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+.modal {
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  margin: auto; /* center container */
+  width: 880px; /* num_items*(item_width+(item_margin*2)) */
+  min-width: 880px;
+  justify-content: flex-start;
+}
+.modalPhoto {
+  margin: auto;
+  border: 10px solid white;
+}
+.next{
+  position: absolute;
+  top: 50%;
+  right: 15%;
+}
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+.close {
+  position: absolute;
+  top: 15%;
+  right: 12%;
+}
+.next,
+.prev,
+.close {
+  color: goldenrod;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.next:hover,
+.next:focus,
+.prev:hover,
+.prev:focus,
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
