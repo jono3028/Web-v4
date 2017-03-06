@@ -1,6 +1,6 @@
 /*
 melgetsjon v4
-3 MAR 2017
+5 MAR 2017
 */
 /* reset */
 * {
@@ -34,7 +34,7 @@ h1 {
 /* Home page specific */
 #home {
   width: 450px;
-  margin: 150px 100px;
+  margin: 150px 200px;
 }
 #buttons {
   margin-top: 250px;
@@ -83,6 +83,7 @@ h1 {
   flex-wrap: wrap;
   border: goldenrod solid 1px;
   padding: 10px; /* same as item_margin */
+  align-items: center;
 }
 .galleryPhoto {
   width: 200px;
